@@ -172,7 +172,7 @@ nav {
     height: 100vh;
     width: 100vw;
     z-index: 1000;
-    background-image: url('../img/mobile.jpg');
+    background-image: url('./img/mobile.jpg');
     background-position: center;
     background-size: cover;
     display: flex;
@@ -278,7 +278,7 @@ header {
     .hero-bg {
         position: relative;
         height: 100vh;
-        background-image: url('../img/her0.jpg');
+        background-image: url('./img/her0.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
