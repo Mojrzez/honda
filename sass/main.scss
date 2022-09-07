@@ -91,12 +91,12 @@ nav {
     z-index: 1005;
     transform: rotateZ(-180deg);
 
-    
-    
+
+
 
     &:hover {
-        
-        
+
+
 
 
         .burger-btn__bars::after {
@@ -111,14 +111,14 @@ nav {
         border-radius: 5px;
     }
 
-    
+
     &__box {
         position: relative;
         width: 40px;
         height: 30px;
-        
+
     }
-    
+
     &__mark {
         position: absolute;
         color: white;
@@ -130,7 +130,7 @@ nav {
         z-index: 1005;
     }
 
-   
+
     &__bars,
     &__bars::after,
     &__bars::before {
@@ -172,7 +172,7 @@ nav {
     height: 100vh;
     width: 100vw;
     z-index: 1000;
-    background-image: url('/img/mobile.jpg');
+    background-image: url('../img/mobile.jpg');
     background-position: center;
     background-size: cover;
     display: flex;
@@ -181,11 +181,12 @@ nav {
     flex-direction: column;
     transform: translateX(-100%);
     transition: transform .6s;
+
     &--active {
         transform: translateX(0);
-        
+
     }
-    
+
 
 
 
@@ -203,10 +204,10 @@ nav {
         justify-content: center;
         align-items: center;
         z-index: 1002;
-        
 
-        
-        
+
+
+
 
         .mobile-link {
             position: relative;
@@ -233,6 +234,7 @@ nav {
 
 
             }
+
             &::before {
                 position: absolute;
                 content: '';
@@ -251,6 +253,7 @@ nav {
             &:hover::after {
                 opacity: 1;
             }
+
             &:hover::before {
                 opacity: 1;
             }
@@ -275,7 +278,7 @@ header {
     .hero-bg {
         position: relative;
         height: 100vh;
-        background-image: url('/img/her0.jpg');
+        background-image: url('../img/her0.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -329,7 +332,7 @@ header {
             animation: pulse 3s linear infinite;
 
 
-            a{
+            a {
                 font-size: 1.8rem;
                 text-decoration: none;
                 color: white;
