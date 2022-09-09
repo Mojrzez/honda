@@ -29,9 +29,9 @@ body {
     color: white;
     padding: 10em 2em;
 
-.action {
-    color: red;
-}
+    .action {
+        color: red;
+    }
 
 
 
@@ -56,11 +56,11 @@ body {
     }
 
     .car-boxes {
-    
+
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-      
+
         .car-box {
             position: relative;
             height: 60vh;
@@ -77,7 +77,7 @@ body {
                 width: 100%;
                 overflow: hidden;
 
-            
+
 
             }
 
@@ -746,26 +746,26 @@ header {
 
     .cars {
         padding: 10em 3em;
-    
-    
-    
-    
-    
+
+
+
+
+
         &-title {
-          
+
             font-size: 3rem;
             margin-bottom: 7em;
-    
+
         }
-    
-      
-    
+
+
+
         .car-boxes {
-        
+
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-          
+
             .car-box {
                 position: relative;
                 height: 60vh;
@@ -775,18 +775,18 @@ header {
                 border: 2px solid rgb(255, 255, 255);
                 background-color: rgb(0, 0, 0);
                 margin-bottom: 15rem;
-    
+
                 .image {
                     position: absolute;
                     height: 60%;
                     width: 100%;
                     object-fit: cover;
                     object-position: center;
-    
-    
+
+
                 }
-    
-    
+
+
                 .text {
                     height: 40%;
                     width: 100%;
@@ -794,17 +794,17 @@ header {
                     bottom: 0;
                     padding: 2rem;
                     text-align: center;
-    
+
                     h2 {
                         margin-top: 1rem;
                         display: block;
                         text-align: center;
                         color: white;
-                      
+
                         font-size: 3rem;
-    
+
                     }
-    
+
                     .icons {
                         display: flex;
                         justify-content: space-around;
@@ -815,24 +815,24 @@ header {
                         bottom: 10%;
                         left: 50%;
                         transform: translateX(-50%);
-    
-    
+
+
                         i {
                             color: white;
                             font-size: 5.2rem;
                             cursor: pointer;
                         }
                     }
-    
-    
+
+
                 }
-    
-    
+
+
             }
-    
+
         }
     }
-    
+
 
 
 
@@ -981,20 +981,20 @@ header {
 
     .cars {
         padding: 10em 4em;
-    
-    
-    
-    
-    
+
+
+
+
+
         &-title {
-          
+
             font-size: 3rem;
             margin-bottom: 7em;
-    
+
         }
-    
-      
-    
+
+
+
         .car-boxes {
             height: 100%;
             // width: 90%;
@@ -1006,7 +1006,7 @@ header {
             // .box1 {
             //     margin-ri
             // }
-         
+
             .car-box {
                 position: relative;
                 height: 70vh;
@@ -1016,19 +1016,19 @@ header {
                 border: 2px solid rgb(255, 255, 255);
                 background-color: rgb(0, 0, 0);
                 margin-bottom: 15rem;
-                
-    
+
+
                 .image {
                     position: absolute;
                     height: 60%;
                     max-width: 40vw;
                     object-fit: cover;
                     object-position: center;
-    
-    
+
+
                 }
-    
-    
+
+
                 .text {
                     height: 40%;
                     width: 100%;
@@ -1036,17 +1036,17 @@ header {
                     bottom: 0;
                     padding: 2rem;
                     text-align: center;
-    
+
                     h2 {
                         margin-top: 1rem;
                         display: block;
                         text-align: center;
                         color: white;
-                      
+
                         font-size: 3rem;
-    
+
                     }
-    
+
                     .icons {
                         display: flex;
                         justify-content: space-around;
@@ -1057,24 +1057,24 @@ header {
                         bottom: 10%;
                         left: 50%;
                         transform: translateX(-50%);
-    
-    
+
+
                         i {
                             color: white;
                             font-size: 5.2rem;
                             cursor: pointer;
                         }
                     }
-    
-    
+
+
                 }
-    
-    
+
+
             }
-    
+
         }
     }
-    
+
 
 
 }
@@ -1160,7 +1160,7 @@ header {
             .community-box_image {
                 width: 100%;
                 height: 100%;
-                background-image: url('/img/esaa-removebg.png');
+                background-image: url('../img/esaa-removebg.png');
                 background-size: 170%;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -1252,20 +1252,20 @@ header {
 
     .cars {
         padding: 10em 4em;
-    
-    
-    
-    
-    
+
+
+
+
+
         &-title {
-          
+
             font-size: 3rem;
             margin-bottom: 7em;
-    
+
         }
-    
-      
-    
+
+
+
         .car-boxes {
             height: 100%;
             // width: 90%;
@@ -1277,7 +1277,7 @@ header {
             // .box1 {
             //     margin-ri
             // }
-         
+
             .car-box {
                 position: relative;
                 height: 70vh;
@@ -1287,19 +1287,19 @@ header {
                 border: 2px solid rgb(255, 255, 255);
                 background-color: rgb(0, 0, 0);
                 margin-bottom: 15rem;
-                
-    
+
+
                 .image {
                     position: absolute;
                     height: 60%;
                     max-width: 40vw;
                     object-fit: cover;
                     object-position: center;
-    
-    
+
+
                 }
-    
-    
+
+
                 .text {
                     height: 40%;
                     width: 100%;
@@ -1307,17 +1307,17 @@ header {
                     bottom: 0;
                     padding: 2rem;
                     text-align: center;
-    
+
                     h2 {
                         margin-top: 1rem;
                         display: block;
                         text-align: center;
                         color: white;
-                      
+
                         font-size: 3rem;
-    
+
                     }
-    
+
                     .icons {
                         display: flex;
                         justify-content: space-around;
@@ -1328,21 +1328,21 @@ header {
                         bottom: 10%;
                         left: 50%;
                         transform: translateX(-50%);
-    
-    
+
+
                         i {
                             color: white;
                             font-size: 5.2rem;
                             cursor: pointer;
                         }
                     }
-    
-    
+
+
                 }
-    
-    
+
+
             }
-    
+
         }
     }
 
@@ -1402,20 +1402,20 @@ header {
 
     .cars {
         padding: 10em 5em;
-    
-    
-    
-    
-    
+
+
+
+
+
         &-title {
-          
+
             font-size: 3rem;
             margin-bottom: 7em;
-    
+
         }
-    
-      
-    
+
+
+
         .car-boxes {
             height: 100%;
             // width: 90%;
@@ -1427,10 +1427,10 @@ header {
             // .box1 {
             //     margin-ri
             // }
-         
-.container1 {
-    margin-right: 10rem;
-}
+
+            .container1 {
+                margin-right: 10rem;
+            }
 
             .car-box {
                 position: relative;
@@ -1442,19 +1442,19 @@ header {
                 background-color: rgb(0, 0, 0);
                 margin-bottom: 15rem;
                 // margin: 5rem 5rem;
-                
-    
+
+
                 .image {
                     position: absolute;
                     height: 60%;
                     max-width: 40vw;
                     object-fit: cover;
                     object-position: center;
-    
-    
+
+
                 }
-    
-    
+
+
                 .text {
                     height: 40%;
                     width: 100%;
@@ -1462,17 +1462,17 @@ header {
                     bottom: 0;
                     padding: 2rem;
                     text-align: center;
-    
+
                     h2 {
                         margin-top: 1rem;
                         display: block;
                         text-align: center;
                         color: white;
-                      
+
                         font-size: 3rem;
-    
+
                     }
-    
+
                     .icons {
                         display: flex;
                         justify-content: space-around;
@@ -1483,21 +1483,21 @@ header {
                         bottom: 10%;
                         left: 50%;
                         transform: translateX(-50%);
-    
-    
+
+
                         i {
                             color: white;
                             font-size: 5.2rem;
                             cursor: pointer;
                         }
                     }
-    
-    
+
+
                 }
-    
-    
+
+
             }
-    
+
         }
     }
 

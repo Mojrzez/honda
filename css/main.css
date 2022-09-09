@@ -980,7 +980,7 @@ header .hero-bg .circle a {
   .community .community-box .community-box_image {
     width: 100%;
     height: 100%;
-    background-image: url("/img/esaa-removebg.png");
+    background-image: url("../img/esaa-removebg.png");
     background-size: 170%;
     background-position: center;
     background-repeat: no-repeat;
