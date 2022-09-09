@@ -17,6 +17,121 @@ body {
   font-size: 1.6rem;
 }
 
+.cars {
+  background-color: black;
+  color: white;
+  padding: 10em 2em;
+}
+
+.cars .action {
+  color: red;
+}
+
+.cars-title {
+  position: relative;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  margin-bottom: 7em;
+}
+
+.cars-title::after {
+  position: absolute;
+  content: '';
+  height: 3px;
+  width: 50%;
+  bottom: -1.2rem;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  background-color: red;
+}
+
+.cars .car-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cars .car-boxes .car-box {
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+  border-radius: 15px;
+  width: 100%;
+  border: 2px solid #ece2e2;
+  background-color: black;
+  margin-bottom: 15rem;
+}
+
+.cars .car-boxes .car-box .image {
+  position: absolute;
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cars .car-boxes .car-box .text {
+  height: 40%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 2rem;
+  text-align: center;
+}
+
+.cars .car-boxes .car-box .text h2 {
+  display: block;
+  text-align: center;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.cars .car-boxes .car-box .text .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+  width: 80%;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.cars .car-boxes .car-box .text .icons i {
+  color: white;
+  font-size: 4rem;
+  cursor: pointer;
+  -webkit-transition: color .3s, -webkit-transform .3s;
+  transition: color .3s, -webkit-transform .3s;
+  transition: transform .3s, color .3s;
+  transition: transform .3s, color .3s, -webkit-transform .3s;
+}
+
+.cars .car-boxes .car-box .text .icons i:hover {
+  color: rgba(255, 0, 0, 0.877);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.nav--active {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 nav {
   position: fixed;
   width: 100vw;
@@ -24,6 +139,8 @@ nav {
   background-color: rgba(0, 0, 0, 0);
   z-index: 3;
   display: none;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
 }
 
 nav .nav-left {
@@ -156,7 +273,7 @@ nav .nav-right .navlinks:hover {
   height: 100vh;
   width: 100vw;
   z-index: 1000;
-  background-image: url("./img/mobile.jpg");
+  background-image: url("../img/mobile.jpg");
   background-position: center;
   background-size: cover;
   display: -webkit-box;
@@ -267,7 +384,7 @@ nav .nav-right .navlinks:hover {
 header .hero-bg {
   position: relative;
   height: 100vh;
-  background-image: url("./img/her0.jpg");
+  background-image: url("../img/her0.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -372,13 +489,302 @@ header .hero-bg .circle a {
   }
 }
 
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.community {
+  background-color: black;
+  padding: 4em 2em;
+  height: 100%;
+  width: 100%;
+}
+
+.community .community-box {
+  color: white;
+}
+
+.community .community-box .community-box_image {
+  display: none;
+}
+
+.community .community-box .community-box_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  padding: 2rem 3rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.community .community-box .community-box_text h2 {
+  position: relative;
+  font-size: 4rem;
+  margin-bottom: 10rem;
+}
+
+.community .community-box .community-box_text h2::after {
+  position: absolute;
+  content: '';
+  height: 3px;
+  width: 70%;
+  bottom: -1rem;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  background-color: red;
+}
+
+.community .community-box .community-box_text .com {
+  margin-bottom: 5rem;
+}
+
+.community .community-box .community-box_text button {
+  height: 80px;
+  width: 180px;
+  border-radius: 20px;
+  background: transparent;
+  color: white;
+  border: 3px solid red;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.9rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+  margin-top: 5rem;
+}
+
+.community .community-box .community-box_text button:hover {
+  background-color: red;
+  color: black;
+  border: 2px solid black;
+}
+
+.community .community-box .community-box_text button a {
+  color: white;
+  text-decoration: none;
+}
+
+.community .community-box .community-box_text--achi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.community .community-box .community-box_text--achi .item {
+  text-align: center;
+  margin: 3rem 3rem;
+}
+
+.community .community-box .community-box_text--achi .item h5 {
+  font-size: 2.7rem;
+}
+
+.community .community-box .community-box_text--achi .item p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: gray;
+}
+
 @media (min-width: 576px) {
   header .hero-bg .hero-bg__title {
     font-size: 1.8rem;
   }
+  .community {
+    padding: 4em 3em;
+  }
+  .community .community-box {
+    height: 100%;
+  }
+  .community .community-box .community-box_image {
+    display: none;
+  }
+  .community .community-box .community-box_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 3rem 4rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .community .community-box .community-box_text h2 {
+    position: relative;
+    font-size: 4.4rem;
+    margin-bottom: 10rem;
+  }
+  .community .community-box .community-box_text .com {
+    font-size: 2.6rem;
+    margin-bottom: 7rem;
+  }
+  .community .community-box .community-box_text button {
+    height: 100px;
+    width: 220px;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    border: 3px solid white;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.2rem;
+    -webkit-transition: .3s;
+    transition: .3s;
+    margin-top: 7rem;
+  }
+  .community .community-box .community-box_text button a {
+    color: white;
+    text-decoration: none;
+  }
+  .community .community-box .community-box_text button:hover {
+    background-color: red;
+    color: black;
+    border: 2px solid black;
+  }
+  .community .community-box .community-box_text--achi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .community .community-box .community-box_text--achi .item {
+    text-align: center;
+    margin: 3.5rem 3rem;
+  }
+  .community .community-box .community-box_text--achi .item h5 {
+    font-size: 3.3rem;
+  }
+  .community .community-box .community-box_text--achi .item p {
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: gray;
+  }
+  .cars {
+    padding: 10em 3em;
+  }
+  .cars-title {
+    font-size: 3rem;
+    margin-bottom: 7em;
+  }
+  .cars .car-boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .cars .car-boxes .car-box {
+    position: relative;
+    height: 60vh;
+    overflow: hidden;
+    border-radius: 15px;
+    width: 100%;
+    border: 2px solid white;
+    background-color: black;
+    margin-bottom: 15rem;
+  }
+  .cars .car-boxes .car-box .image {
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .cars .car-boxes .car-box .text {
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    text-align: center;
+  }
+  .cars .car-boxes .car-box .text h2 {
+    margin-top: 1rem;
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+  }
+  .cars .car-boxes .car-box .text .icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 10vh;
+    width: 80%;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .cars .car-boxes .car-box .text .icons i {
+    color: white;
+    font-size: 5.2rem;
+    cursor: pointer;
+  }
 }
 
 @media (min-width: 756px) {
+  html {
+    scroll-padding-top: 10vh;
+  }
   header .hero-bg .hero-bg__title {
     font-size: 2.2rem;
   }
@@ -412,6 +818,15 @@ header .hero-bg .circle a {
   .mobile-nav {
     display: none;
   }
+  .community .community-box .community-box_text .community-box_text--achi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 @media (min-width: 992px) {
@@ -437,6 +852,82 @@ header .hero-bg .circle a {
   }
   .burger-btn {
     display: none;
+  }
+  .cars {
+    padding: 10em 4em;
+  }
+  .cars-title {
+    font-size: 3rem;
+    margin-bottom: 7em;
+  }
+  .cars .car-boxes {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .cars .car-boxes .car-box {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+    border-radius: 15px;
+    width: 40vw;
+    border: 2px solid white;
+    background-color: black;
+    margin-bottom: 15rem;
+  }
+  .cars .car-boxes .car-box .image {
+    position: absolute;
+    height: 60%;
+    max-width: 40vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .cars .car-boxes .car-box .text {
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    text-align: center;
+  }
+  .cars .car-boxes .car-box .text h2 {
+    margin-top: 1rem;
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+  }
+  .cars .car-boxes .car-box .text .icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 10vh;
+    width: 80%;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .cars .car-boxes .car-box .text .icons i {
+    color: white;
+    font-size: 5.2rem;
+    cursor: pointer;
   }
 }
 
@@ -464,6 +955,192 @@ header .hero-bg .circle a {
   .burger-btn {
     display: none;
   }
+  .community {
+    background-color: black;
+    padding: 5em 5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .community .community-box {
+    height: 70vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+  }
+  .community .community-box .community-box_image {
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/esaa-removebg.png");
+    background-size: 170%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+  }
+  .community .community-box .community-box_text {
+    width: 60%;
+    height: 100%;
+    padding: 4rem 10rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 2rem;
+  }
+  .community .community-box .community-box_text h2 {
+    position: relative;
+    font-size: 4rem;
+  }
+  .community .community-box .community-box_text h2::after {
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 70%;
+    bottom: -1rem;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    background-color: red;
+  }
+  .community .community-box .community-box_text button {
+    height: 70px;
+    width: 180px;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    border: 3px solid red;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .community .community-box .community-box_text button:hover {
+    background-color: red;
+    color: black;
+    border: 2px solid black;
+  }
+  .community .community-box .community-box_text--achi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .community .community-box .community-box_text--achi .item {
+    text-align: center;
+    margin: 0rem 3rem;
+  }
+  .community .community-box .community-box_text--achi .item h5 {
+    font-size: 2.7rem;
+  }
+  .community .community-box .community-box_text--achi .item p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: gray;
+  }
+  .cars {
+    padding: 10em 4em;
+  }
+  .cars-title {
+    font-size: 3rem;
+    margin-bottom: 7em;
+  }
+  .cars .car-boxes {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .cars .car-boxes .car-box {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+    border-radius: 15px;
+    width: 40vw;
+    border: 2px solid white;
+    background-color: black;
+    margin-bottom: 15rem;
+  }
+  .cars .car-boxes .car-box .image {
+    position: absolute;
+    height: 60%;
+    max-width: 40vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .cars .car-boxes .car-box .text {
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    text-align: center;
+  }
+  .cars .car-boxes .car-box .text h2 {
+    margin-top: 1rem;
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+  }
+  .cars .car-boxes .car-box .text .icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 10vh;
+    width: 80%;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .cars .car-boxes .car-box .text .icons i {
+    color: white;
+    font-size: 5.2rem;
+    cursor: pointer;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -483,6 +1160,84 @@ header .hero-bg .circle a {
   }
   nav .nav-right .navlinks {
     font-size: 2.5rem;
+  }
+  .cars {
+    padding: 10em 5em;
+  }
+  .cars-title {
+    font-size: 3rem;
+    margin-bottom: 7em;
+  }
+  .cars .car-boxes {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .cars .car-boxes .container1 {
+    margin-right: 10rem;
+  }
+  .cars .car-boxes .car-box {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+    border-radius: 15px;
+    width: 35vw;
+    border: 2px solid white;
+    background-color: black;
+    margin-bottom: 15rem;
+  }
+  .cars .car-boxes .car-box .image {
+    position: absolute;
+    height: 60%;
+    max-width: 40vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .cars .car-boxes .car-box .text {
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    text-align: center;
+  }
+  .cars .car-boxes .car-box .text h2 {
+    margin-top: 1rem;
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+  }
+  .cars .car-boxes .car-box .text .icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 10vh;
+    width: 80%;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .cars .car-boxes .car-box .text .icons i {
+    color: white;
+    font-size: 5.2rem;
+    cursor: pointer;
   }
 }
 /*# sourceMappingURL=main.css.map */

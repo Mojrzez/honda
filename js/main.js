@@ -18,3 +18,18 @@ links.forEach(item => {
 
 
 navBtn.addEventListener('click', handleNav);
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    const nav = document.querySelector('.nav') 
+
+    function addShadow() {
+        if (window.scrollY >= 150) {
+            nav.classList.add('nav--active')
+        } else {
+            nav.classList.remove('nav--active')
+        }
+    }
+
+window.addEventListener('scroll', addShadow)
+})

@@ -9,6 +9,7 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+
 }
 
 body {
@@ -17,7 +18,127 @@ body {
 }
 
 
+
+
+
+
+
+.cars {
+
+    background-color: black;
+    color: white;
+    padding: 10em 2em;
+
+.action {
+    color: red;
+}
+
+
+
+    &-title {
+        position: relative;
+        text-align: center;
+        font-size: 3rem;
+        letter-spacing: 1px;
+        margin-bottom: 7em;
+
+    }
+
+    &-title::after {
+        position: absolute;
+        content: '';
+        height: 3px;
+        width: 50%;
+        bottom: -1.2rem;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: red;
+    }
+
+    .car-boxes {
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      
+        .car-box {
+            position: relative;
+            height: 60vh;
+            overflow: hidden;
+            border-radius: 15px;
+            width: 100%;
+            border: 2px solid rgb(236, 226, 226);
+            background-color: rgb(0, 0, 0);
+            margin-bottom: 15rem;
+
+            .image {
+                position: absolute;
+                height: 60%;
+                width: 100%;
+                overflow: hidden;
+                // object-fit: contain;
+
+            }
+
+
+            .text {
+                height: 40%;
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                padding: 2rem;
+                text-align: center;
+
+                h2 {
+                    display: block;
+                    text-align: center;
+                    color: white;
+                    margin-bottom: 1rem;
+
+                }
+
+                .icons {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    height: 10vh;
+                    width: 80%;
+                    position: absolute;
+                    bottom: 10%;
+                    left: 50%;
+                    transform: translateX(-50%);
+
+
+                    i {
+                        color: white;
+                        font-size: 4rem;
+                        cursor: pointer;
+                        transition: transform .3s, color .3s;
+
+                        &:hover {
+                            color: rgba(255, 0, 0, 0.877);
+                            transform: scale(1.2);
+                        }
+
+                    }
+                }
+
+
+            }
+
+
+        }
+
+    }
+}
+
+
+
 // nav
+
+.nav--active {
+    background-color: rgba(0, 0, 0, 0.7);
+}
 
 nav {
     position: fixed;
@@ -26,6 +147,8 @@ nav {
     background-color: rgba(0, 0, 0, 0);
     z-index: 3;
     display: none;
+    transition: background-color .3s;
+
 
 
     .nav-left {
@@ -367,6 +490,143 @@ header {
 }
 
 
+// main
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+.community {
+    background-color: rgb(0, 0, 0);
+    padding: 4em 2em;
+    height: 100%;
+    width: 100%;
+
+
+    .community-box {
+        color: white;
+
+        .community-box_image {
+            display: none;
+        }
+
+        .community-box_text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+            width: 100%;
+            padding: 2rem 3rem;
+            font-size: 2rem;
+            text-align: center;
+
+            h2 {
+                position: relative;
+                font-size: 4rem;
+                margin-bottom: 10rem;
+
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    height: 3px;
+                    width: 70%;
+                    bottom: -1rem;
+                    left: 50%;
+                    transform: translate(-50%);
+                    background-color: red;
+
+
+                }
+            }
+
+            .com {
+                margin-bottom: 5rem;
+            }
+
+            button {
+                height: 80px;
+                width: 180px;
+                border-radius: 20px;
+                background: transparent;
+                color: white;
+                border: 3px solid red;
+                cursor: pointer;
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: bold;
+                font-size: 1.9rem;
+                transition: .3s;
+                margin-top: 5rem;
+
+                &:hover {
+                    background-color: red;
+                    color: black;
+                    border: 2px solid black;
+                }
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+
+
+            &--achi {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+
+                .item {
+                    text-align: center;
+                    margin: 3rem 3rem;
+
+                    h5 {
+                        font-size: 2.7rem;
+                    }
+
+                    p {
+                        font-size: 1.5rem;
+                        margin-top: 1rem;
+                        color: gray;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (min-width: 576px) {
@@ -389,9 +649,201 @@ header {
 
     }
 
+    .community {
+        padding: 4em 3em;
+
+        .community-box {
+            height: 100%;
+
+            .community-box_image {
+                display: none;
+            }
+
+            .community-box_text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                width: 100%;
+                padding: 3rem 4rem;
+                font-size: 2rem;
+                text-align: center;
+
+                h2 {
+                    position: relative;
+                    font-size: 4.4rem;
+                    margin-bottom: 10rem;
+
+                }
+
+                .com {
+                    font-size: 2.6rem;
+                    margin-bottom: 7rem;
+                }
+
+                button {
+                    height: 100px;
+                    width: 220px;
+                    border-radius: 20px;
+                    background: transparent;
+                    color: white;
+                    border: 3px solid rgb(255, 255, 255);
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: 2.2rem;
+                    transition: .3s;
+                    margin-top: 7rem;
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                    }
+
+                    &:hover {
+                        background-color: red;
+                        color: black;
+                        border: 2px solid black;
+                    }
+                }
+
+
+                &--achi {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+
+                    .item {
+                        text-align: center;
+                        margin: 3.5rem 3rem;
+
+                        h5 {
+                            font-size: 3.3rem;
+                        }
+
+                        p {
+                            font-size: 2rem;
+                            margin-top: 1rem;
+                            color: gray;
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+
+        }
+
+
+    }
+
+    .cars {
+        padding: 10em 3em;
+    
+    
+    
+    
+    
+        &-title {
+          
+            font-size: 3rem;
+            margin-bottom: 7em;
+    
+        }
+    
+      
+    
+        .car-boxes {
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          
+            .car-box {
+                position: relative;
+                height: 60vh;
+                overflow: hidden;
+                border-radius: 15px;
+                width: 100%;
+                border: 2px solid rgb(255, 255, 255);
+                background-color: rgb(0, 0, 0);
+                margin-bottom: 15rem;
+    
+                .image {
+                    position: absolute;
+                    height: 60%;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center;
+    
+    
+                }
+    
+    
+                .text {
+                    height: 40%;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    padding: 2rem;
+                    text-align: center;
+    
+                    h2 {
+                        margin-top: 1rem;
+                        display: block;
+                        text-align: center;
+                        color: white;
+                      
+                        font-size: 3rem;
+    
+                    }
+    
+                    .icons {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        height: 10vh;
+                        width: 80%;
+                        position: absolute;
+                        bottom: 10%;
+                        left: 50%;
+                        transform: translateX(-50%);
+    
+    
+                        i {
+                            color: white;
+                            font-size: 5.2rem;
+                            cursor: pointer;
+                        }
+                    }
+    
+    
+                }
+    
+    
+            }
+    
+        }
+    }
+    
+
+
+
+
 }
 
 @media (min-width: 756px) {
+
+
+    html {
+        scroll-padding-top: 10vh;
+    }
 
     header {
         .hero-bg {
@@ -452,6 +904,17 @@ header {
 
     .mobile-nav {
         display: none;
+    }
+
+    .community {
+        .community-box {
+            .community-box_text {
+                .community-box_text--achi {
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+        }
     }
 
 
@@ -515,8 +978,107 @@ header {
         display: none;
     }
 
+    .cars {
+        padding: 10em 4em;
+    
+    
+    
+    
+    
+        &-title {
+          
+            font-size: 3rem;
+            margin-bottom: 7em;
+    
+        }
+    
+      
+    
+        .car-boxes {
+            height: 100%;
+            // width: 90%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            // align-items: center;
+
+            // .box1 {
+            //     margin-ri
+            // }
+         
+            .car-box {
+                position: relative;
+                height: 70vh;
+                overflow: hidden;
+                border-radius: 15px;
+                width: 40vw;
+                border: 2px solid rgb(255, 255, 255);
+                background-color: rgb(0, 0, 0);
+                margin-bottom: 15rem;
+                
+    
+                .image {
+                    position: absolute;
+                    height: 60%;
+                    max-width: 40vw;
+                    object-fit: cover;
+                    object-position: center;
+    
+    
+                }
+    
+    
+                .text {
+                    height: 40%;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    padding: 2rem;
+                    text-align: center;
+    
+                    h2 {
+                        margin-top: 1rem;
+                        display: block;
+                        text-align: center;
+                        color: white;
+                      
+                        font-size: 3rem;
+    
+                    }
+    
+                    .icons {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        height: 10vh;
+                        width: 80%;
+                        position: absolute;
+                        bottom: 10%;
+                        left: 50%;
+                        transform: translateX(-50%);
+    
+    
+                        i {
+                            color: white;
+                            font-size: 5.2rem;
+                            cursor: pointer;
+                        }
+                    }
+    
+    
+                }
+    
+    
+            }
+    
+        }
+    }
+    
+
 
 }
+
+
 
 @media (min-width: 1200px) {
 
@@ -577,7 +1139,219 @@ header {
     }
 
 
+
+    .community {
+        background-color: rgb(0, 0, 0);
+        padding: 5em 5em;
+        display: flex;
+        flex-direction: column;
+
+
+
+
+        .community-box {
+            height: 70vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            color: white;
+
+            .community-box_image {
+                width: 100%;
+                height: 100%;
+                background-image: url('/img/esaa-removebg.png');
+                background-size: 170%;
+                background-position: center;
+                background-repeat: no-repeat;
+                display: block;
+            }
+
+            .community-box_text {
+                width: 60%;
+                height: 100%;
+                padding: 4rem 10rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                justify-content: space-between;
+                font-size: 2rem;
+
+                h2 {
+                    position: relative;
+                    font-size: 4rem;
+
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        height: 3px;
+                        width: 70%;
+                        bottom: -1rem;
+                        left: 50%;
+                        transform: translate(-50%);
+                        background-color: red;
+
+
+                    }
+                }
+
+                button {
+                    height: 70px;
+                    width: 180px;
+                    border-radius: 20px;
+                    background: transparent;
+                    color: white;
+                    border: 3px solid red;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: 2rem;
+                    transition: .3s;
+
+                    &:hover {
+                        background-color: red;
+                        color: black;
+                        border: 2px solid black;
+                    }
+                }
+
+
+                &--achi {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    .item {
+                        text-align: center;
+                        margin: 0rem 3rem;
+
+                        h5 {
+                            font-size: 2.7rem;
+                        }
+
+                        p {
+                            font-size: 1.5rem;
+                            margin-top: 1rem;
+                            color: gray;
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+
+        }
+
+
+    }
+
+    .cars {
+        padding: 10em 4em;
+    
+    
+    
+    
+    
+        &-title {
+          
+            font-size: 3rem;
+            margin-bottom: 7em;
+    
+        }
+    
+      
+    
+        .car-boxes {
+            height: 100%;
+            // width: 90%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            // align-items: center;
+
+            // .box1 {
+            //     margin-ri
+            // }
+         
+            .car-box {
+                position: relative;
+                height: 70vh;
+                overflow: hidden;
+                border-radius: 15px;
+                width: 40vw;
+                border: 2px solid rgb(255, 255, 255);
+                background-color: rgb(0, 0, 0);
+                margin-bottom: 15rem;
+                
+    
+                .image {
+                    position: absolute;
+                    height: 60%;
+                    max-width: 40vw;
+                    object-fit: cover;
+                    object-position: center;
+    
+    
+                }
+    
+    
+                .text {
+                    height: 40%;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    padding: 2rem;
+                    text-align: center;
+    
+                    h2 {
+                        margin-top: 1rem;
+                        display: block;
+                        text-align: center;
+                        color: white;
+                      
+                        font-size: 3rem;
+    
+                    }
+    
+                    .icons {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        height: 10vh;
+                        width: 80%;
+                        position: absolute;
+                        bottom: 10%;
+                        left: 50%;
+                        transform: translateX(-50%);
+    
+    
+                        i {
+                            color: white;
+                            font-size: 5.2rem;
+                            cursor: pointer;
+                        }
+                    }
+    
+    
+                }
+    
+    
+            }
+    
+        }
+    }
+
+
+
+
+
 }
+
+
 
 
 @media (min-width: 1400px) {
@@ -624,4 +1398,106 @@ header {
 
         }
     }
+
+    .cars {
+        padding: 10em 5em;
+    
+    
+    
+    
+    
+        &-title {
+          
+            font-size: 3rem;
+            margin-bottom: 7em;
+    
+        }
+    
+      
+    
+        .car-boxes {
+            height: 100%;
+            // width: 90%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            // align-items: center;
+
+            // .box1 {
+            //     margin-ri
+            // }
+         
+.container1 {
+    margin-right: 10rem;
+}
+
+            .car-box {
+                position: relative;
+                height: 70vh;
+                overflow: hidden;
+                border-radius: 15px;
+                width: 35vw;
+                border: 2px solid rgb(255, 255, 255);
+                background-color: rgb(0, 0, 0);
+                margin-bottom: 15rem;
+                // margin: 5rem 5rem;
+                
+    
+                .image {
+                    position: absolute;
+                    height: 60%;
+                    max-width: 40vw;
+                    object-fit: cover;
+                    object-position: center;
+    
+    
+                }
+    
+    
+                .text {
+                    height: 40%;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    padding: 2rem;
+                    text-align: center;
+    
+                    h2 {
+                        margin-top: 1rem;
+                        display: block;
+                        text-align: center;
+                        color: white;
+                      
+                        font-size: 3rem;
+    
+                    }
+    
+                    .icons {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        height: 10vh;
+                        width: 80%;
+                        position: absolute;
+                        bottom: 10%;
+                        left: 50%;
+                        transform: translateX(-50%);
+    
+    
+                        i {
+                            color: white;
+                            font-size: 5.2rem;
+                            cursor: pointer;
+                        }
+                    }
+    
+    
+                }
+    
+    
+            }
+    
+        }
+    }
+
 }
