@@ -62,7 +62,7 @@ body {
 
 .cars .car-boxes .car-box {
   position: relative;
-  height: 60vh;
+  height: 70vh;
   overflow: hidden;
   border-radius: 15px;
   width: 100%;
