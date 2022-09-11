@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -17,10 +18,126 @@ body {
   font-size: 1.6rem;
 }
 
-.cars {
+.shop {
   background-color: black;
   color: white;
   padding: 10em 2em;
+  margin-top: -20vh;
+}
+
+.shop .shop-title {
+  position: relative;
+  text-align: center;
+  font-size: 5rem;
+  letter-spacing: 1px;
+}
+
+.shop .shop-title::after {
+  position: absolute;
+  content: '';
+  height: 3px;
+  width: 20%;
+  bottom: -1.2rem;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  background-color: red;
+}
+
+.shop .shop-boxes {
+  margin-top: 5rem;
+}
+
+.shop .shop-boxes .shop-box {
+  text-align: center;
+  margin-top: 10rem;
+  border-radius: 15px;
+  background-color: rgba(71, 71, 71, 0.432);
+  width: 100%;
+  padding: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shop .shop-boxes .shop-box h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(214, 186, 26, 0.897);
+}
+
+.shop .shop-boxes .shop-box img {
+  margin-top: 4rem;
+  height: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.shop .shop-boxes .shop-box p {
+  margin-top: 5rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.shop .shop-boxes .shop-box .price {
+  font-size: 4rem;
+}
+
+.shop .shop-boxes .shop-box span {
+  color: rgba(26, 214, 26, 0.897);
+}
+
+.shop .shop-boxes .shop-box .shop-list {
+  margin-top: 5rem;
+}
+
+.shop .shop-boxes .shop-box .shop-list .shop-list-item {
+  text-align: center;
+  font-style: 2rem;
+  text-transform: uppercase;
+  padding: 1rem;
+  list-style-type: none;
+}
+
+.shop .shop-boxes .shop-box .shop-list .shop-list-item:nth-child(n)::before {
+  content: '✔️';
+  margin-right: 0.5rem;
+}
+
+.shop .shop-boxes .shop-box button {
+  margin-top: 5rem;
+  cursor: pointer;
+  height: 60px;
+  width: 150px;
+  border: 3px solid rgba(214, 186, 26, 0.897);
+  border-radius: 15px;
+  color: white;
+  background: none;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.shop .shop-boxes .shop-box button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: rgba(214, 186, 26, 0.897);
+}
+
+.cars {
+  background-color: black;
+  color: white;
 }
 
 .cars .action {
@@ -612,6 +729,58 @@ header .hero-bg .circle a {
 }
 
 @media (min-width: 576px) {
+  .shop {
+    padding: 10em 2em;
+  }
+  .shop .shop-title {
+    font-size: 5rem;
+  }
+  .shop .shop-boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 5rem;
+  }
+  .shop .shop-boxes .shop-box {
+    margin-top: 10rem;
+    width: 75%;
+    padding: 4rem;
+  }
+  .shop .shop-boxes .shop-box h2 {
+    font-size: 3rem;
+  }
+  .shop .shop-boxes .shop-box img {
+    margin-top: 5rem;
+    height: auto;
+    width: 90%;
+  }
+  .shop .shop-boxes .shop-box p {
+    margin-top: 5rem;
+    font-size: 2.5rem;
+  }
+  .shop .shop-boxes .shop-box .price {
+    font-size: 5rem;
+  }
+  .shop .shop-boxes .shop-box .shop-list {
+    margin-top: 5rem;
+  }
+  .shop .shop-boxes .shop-box .shop-list .shop-list-item {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  .shop .shop-boxes .shop-box button {
+    margin-top: 5rem;
+    height: 80px;
+    width: 190px;
+    font-size: 2.4rem;
+  }
   header .hero-bg .hero-bg__title {
     font-size: 1.8rem;
   }
@@ -782,6 +951,58 @@ header .hero-bg .circle a {
 }
 
 @media (min-width: 756px) {
+  .shop {
+    padding: 10em 2em;
+  }
+  .shop .shop-title {
+    font-size: 5rem;
+  }
+  .shop .shop-boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 5rem;
+  }
+  .shop .shop-boxes .shop-box {
+    margin-top: 10rem;
+    width: 75%;
+    padding: 4rem;
+  }
+  .shop .shop-boxes .shop-box h2 {
+    font-size: 3.5rem;
+  }
+  .shop .shop-boxes .shop-box img {
+    margin-top: 5rem;
+    height: auto;
+    width: 90%;
+  }
+  .shop .shop-boxes .shop-box p {
+    margin-top: 5rem;
+    font-size: 3rem;
+  }
+  .shop .shop-boxes .shop-box .price {
+    font-size: 5.5rem;
+  }
+  .shop .shop-boxes .shop-box .shop-list {
+    margin-top: 5rem;
+  }
+  .shop .shop-boxes .shop-box .shop-list .shop-list-item {
+    font-size: 2.5rem;
+    padding: 1rem;
+  }
+  .shop .shop-boxes .shop-box button {
+    margin-top: 5rem;
+    height: 90px;
+    width: 220px;
+    font-size: 2.9rem;
+  }
   html {
     scroll-padding-top: 10vh;
   }
@@ -830,6 +1051,64 @@ header .hero-bg .circle a {
 }
 
 @media (min-width: 992px) {
+  .shop {
+    padding: 10em 2em;
+  }
+  .shop .shop-title {
+    font-size: 5rem;
+  }
+  .shop .shop-boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 5rem;
+  }
+  .shop .shop-boxes .shop-box {
+    margin: 4rem;
+    margin-top: 10rem;
+    width: 40%;
+    padding: 4rem;
+  }
+  .shop .shop-boxes .shop-box h2 {
+    font-size: 3.5rem;
+  }
+  .shop .shop-boxes .shop-box img {
+    margin-top: 5rem;
+    height: auto;
+    width: 90%;
+  }
+  .shop .shop-boxes .shop-box p {
+    margin-top: 5rem;
+    font-size: 3rem;
+  }
+  .shop .shop-boxes .shop-box .price {
+    font-size: 5.5rem;
+  }
+  .shop .shop-boxes .shop-box .shop-list {
+    margin-top: 5rem;
+  }
+  .shop .shop-boxes .shop-box .shop-list .shop-list-item {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  .shop .shop-boxes .shop-box button {
+    margin-top: 5rem;
+    height: 80px;
+    width: 200px;
+    font-size: 2.2rem;
+  }
   header .hero-bg .hero-bg__title {
     font-size: 2.5rem;
   }
@@ -932,6 +1211,64 @@ header .hero-bg .circle a {
 }
 
 @media (min-width: 1200px) {
+  .shop {
+    padding: 10em 2em;
+  }
+  .shop .shop-title {
+    font-size: 5rem;
+  }
+  .shop .shop-boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 5rem;
+  }
+  .shop .shop-boxes .shop-box {
+    margin: 4rem;
+    margin-top: 10rem;
+    width: 40%;
+    padding: 4rem;
+  }
+  .shop .shop-boxes .shop-box h2 {
+    font-size: 3.5rem;
+  }
+  .shop .shop-boxes .shop-box img {
+    margin-top: 5rem;
+    height: 25vh;
+    width: 100%;
+  }
+  .shop .shop-boxes .shop-box p {
+    margin-top: 5rem;
+    font-size: 3rem;
+  }
+  .shop .shop-boxes .shop-box .price {
+    font-size: 5.5rem;
+  }
+  .shop .shop-boxes .shop-box .shop-list {
+    margin-top: 5rem;
+  }
+  .shop .shop-boxes .shop-box .shop-list .shop-list-item {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  .shop .shop-boxes .shop-box button {
+    margin-top: 5rem;
+    height: 80px;
+    width: 200px;
+    font-size: 2.2rem;
+  }
   header .hero-bg .hero-bg__title {
     font-size: 2.6rem;
   }
@@ -1144,6 +1481,57 @@ header .hero-bg .circle a {
 }
 
 @media (min-width: 1400px) {
+  .shop {
+    padding: 15em 2em;
+  }
+  .shop .shop-title {
+    font-size: 5rem;
+    margin-bottom: 10vh;
+  }
+  .shop .shop-boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 5rem;
+  }
+  .shop .shop-boxes .shop-box {
+    margin: 4rem;
+    margin-top: 10rem;
+    width: 25vw;
+    padding: 4rem;
+  }
+  .shop .shop-boxes .shop-box h2 {
+    font-size: 3.5rem;
+  }
+  .shop .shop-boxes .shop-box img {
+    margin-top: 5rem;
+    height: 35vh;
+    width: 100%;
+  }
+  .shop .shop-boxes .shop-box p {
+    margin-top: 5rem;
+    font-size: 3rem;
+  }
+  .shop .shop-boxes .shop-box .price {
+    font-size: 5.5rem;
+  }
+  .shop .shop-boxes .shop-box .shop-list {
+    margin-top: 5rem;
+  }
+  .shop .shop-boxes .shop-box .shop-list .shop-list-item {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  .shop .shop-boxes .shop-box button {
+    margin-top: 5rem;
+    height: 80px;
+    width: 200px;
+    font-size: 2.2rem;
+  }
   nav .nav-left {
     width: 40vh;
   }
