@@ -16,13 +16,124 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
+  background-color: black;
+}
+
+footer {
+  color: white;
+  height: 15vh;
+  background-color: rgba(44, 43, 43, 0.76);
+  margin-top: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .topline {
+  margin-top: 1rem;
+  font-size: 3.4rem;
+}
+
+footer .topline i {
+  margin: 1rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+footer .topline i:hover {
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+  color: red;
+}
+
+.contact-title {
+  position: relative;
+  text-align: center;
+  font-size: 4rem;
+  letter-spacing: 1px;
+  background-color: black;
+  color: white;
+}
+
+.contact-title::after {
+  position: absolute;
+  content: '';
+  height: 3px;
+  width: 20%;
+  bottom: -1.2rem;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  background-color: red;
+}
+
+.contact {
+  background-color: black;
+  color: white;
+  padding: 2rem 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20rem;
+}
+
+.contact p {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.contact button {
+  height: 90px;
+  width: 200px;
+  border-radius: 20px;
+  background: transparent;
+  color: white;
+  border: 3px solid red;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+  margin-top: 10rem;
+}
+
+.contact button a {
+  text-decoration: none;
+  color: white;
+}
+
+.contact button:hover {
+  color: black;
+  background-color: red;
 }
 
 .shop {
   background-color: black;
   color: white;
   padding: 10em 2em;
-  margin-top: -20vh;
+  margin-top: -30vh;
 }
 
 .shop .shop-title {
@@ -138,6 +249,7 @@ body {
 .cars {
   background-color: black;
   color: white;
+  padding: 2rem 2rem;
 }
 
 .cars .action {
@@ -1497,6 +1609,8 @@ header .hero-bg .circle a {
         -ms-flex-direction: row;
             flex-direction: row;
     margin-top: 5rem;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   .shop .shop-boxes .shop-box {
     margin: 4rem;

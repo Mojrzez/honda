@@ -15,7 +15,111 @@ html {
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
+    background-color: black;
 }
+
+
+footer {
+    color: white;
+    height: 15vh;
+    background-color: rgba(44, 43, 43, 0.76);
+    margin-top: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .topline {
+        margin-top: 1rem;
+        font-size: 3.4rem;
+        
+
+        i {
+            margin: 1rem;
+            transition: .3s;
+        }
+
+        i:hover {
+            transform: rotate(15deg);
+            color: red;
+        }
+    } 
+}
+
+
+
+
+.contact-title {
+    position: relative;
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: 1px;
+    background-color: black;
+    color: white;
+
+
+}
+
+.contact-title::after {
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 20%;
+    bottom: -1.2rem;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: red;
+}
+
+
+
+.contact {
+    background-color: black;
+    color: white;
+    padding: 2rem 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20rem;
+
+    p {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    button {
+        height: 90px;
+        width: 200px;
+        border-radius: 20px;
+        background: transparent;
+        color: white;
+        border: 3px solid red;
+        cursor: pointer;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: bold;
+        font-size: 2rem;
+        transition: .3s;
+        margin-top: 10rem;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+    } 
+
+    button:hover {
+        color: black;
+        background-color: red;
+    }
+
+
+
+}
+
+
 
 
 
@@ -23,7 +127,7 @@ body {
     background-color: black;
     color: white;
     padding: 10em 2em;
-    margin-top: -20vh;
+    margin-top: -30vh;
 
     .shop-title {
         position: relative;
@@ -148,6 +252,7 @@ body {
 
     background-color: black;
     color: white;
+    padding: 2rem 2rem;
 
     .action {
         color: red;
@@ -1051,7 +1156,7 @@ header {
 
 
     .shop {
-        
+
         padding: 10em 2em;
 
         .shop-title {
@@ -1131,7 +1236,7 @@ header {
 
 
 
-    
+
 
     }
 
@@ -1217,11 +1322,11 @@ header {
 @media (min-width: 992px) {
 
 
-    
+
 
 
     .shop {
-        
+
         padding: 10em 2em;
 
         .shop-title {
@@ -1303,12 +1408,12 @@ header {
 
 
 
-    
+
 
     }
 
 
-    
+
     header {
         .hero-bg {
             .hero-bg__title {
@@ -1472,7 +1577,7 @@ header {
 
 
     .shop {
-        
+
         padding: 10em 2em;
 
         .shop-title {
@@ -1489,6 +1594,7 @@ header {
             justify-content: center;
             align-items: flex-start;
             margin-top: 5rem;
+
 
             .shop-box {
                 margin: 4rem;
@@ -1554,7 +1660,7 @@ header {
 
 
 
-    
+
 
     }
 
@@ -1837,7 +1943,7 @@ header {
 
 
     .shop {
-        
+
         padding: 15em 2em;
 
         .shop-title {
@@ -1852,7 +1958,8 @@ header {
             display: flex;
             flex-direction: row;
             margin-top: 5rem;
-            
+            transform: scale(0.9);
+
 
             .shop-box {
                 margin: 4rem;
@@ -1916,7 +2023,7 @@ header {
 
 
 
-    
+
 
     }
 
