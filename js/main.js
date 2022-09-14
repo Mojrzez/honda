@@ -21,7 +21,7 @@ navBtn.addEventListener('click', handleNav);
 
 document.addEventListener('DOMContentLoaded', function () {
 
-    const nav = document.querySelector('.nav') 
+    const nav = document.querySelector('.nav')
 
     function addShadow() {
         if (window.scrollY >= 150) {
@@ -31,5 +31,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-window.addEventListener('scroll', addShadow)
+    window.addEventListener('scroll', addShadow)
 })
+
