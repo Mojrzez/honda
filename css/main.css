@@ -122,6 +122,8 @@ footer .topline i:hover {
 .contact button a {
   text-decoration: none;
   color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .contact button:hover {
